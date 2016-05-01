@@ -1,0 +1,45 @@
+%!Tex program = xelatex
+\documentclass[UTF8,a4paper,zihao=5]{ctexart}
+\usepackage[margin=1in]{geometry}
+\usepackage{tipa}
+\usepackage{multicol}
+\usepackage{multirow}
+
+\makeatletter
+% \def\dual#1{\expandafter\dual@aux#1\@nil}
+% \def\dual@aux#1/#2\@nil{\begin{tabular}{@{}c@{}}#1\\[-6pt]#2\end{tabular}}
+\newcommand{\markipa}[2]{\begin{tabular}{@{}c@{}}{#1}\\[-6pt]{[\textipa{#2}]}\end{tabular}}
+\makeatother
+
+
+\begin{document}
+\centering
+	\Huge 标点符号中英文对照\\[1cm]
+	\normalsize
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		序号	&中文名 &  中文符号&  英文符号 & 英文名\\ \hline
+		1  	&\markipa{句}{j\`u} \markipa{号}{h\`ao} 							& \LARGE 。 		&\LARGE . & \markipa{period}{"pI@rI@d}, full stop\\ \hline
+		2	&\markipa{问}{w\`en}\markipa{号}{h\`ao} 							& \LARGE ？ 		& \LARGE ? & \markipa{question}{"kwes\textteshlig @n} \markipa{mark}{mA:k}\\ \hline
+		3	&\markipa{叹}{t\`an}\markipa{号}{h\`ao} 							& \LARGE ！		& \LARGE !& \markipa{exclamation}{""ekskl@"meiS@n} \markipa{mark}{mA:k}\\ \hline
+		4	&\markipa{逗}{d\`ou}\markipa{号}{h\`ao} 							& \LARGE ，		& \LARGE ,& \markipa{comma}{"kOm@}\\ \hline
+		5	&\markipa{顿}{d\`un}\markipa{号}{h\`ao} 							& \LARGE 、		&&\\ \hline
+		6	&\markipa{分}{f\=en}\markipa{号}{h\`ao} 							& \LARGE ；		& \LARGE ;& \markipa{semicolon}{"semi"k@ul@n}\\ \hline
+		7	&\markipa{冒}{m\`ao}\markipa{号}{h\`ao} 							& \LARGE ：		& \LARGE :&\markipa{colon}{"k@ul@n}\\ \hline
+		8	&\markipa{引}{y\v{i}n}\markipa{号}{h\`ao} 						& \LARGE “ ” ‘ ’ 『』 「」& \LARGE `' ``''& \markipa{quotation}{kw@u"teiS@n} \markipa{marks}{mA:ks}\\ \hline
+		9	&\markipa{括}{ku\`o}\markipa{号}{h\`ao} 							& \LARGE （ ）	& \LARGE ()& \markipa{brackets}{"br\ae kits}\\ \hline
+		10	&\markipa{破}{p\`o}\markipa{折}{zh\'e}\markipa{号}{h\`ao} 		& \LARGE ——		& \LARGE  -- ---& \markipa{dash}{d\ae S}\\ \hline
+		11	&\markipa{省}{sh\v{e}ng}\markipa{略}{l\`{\"u}e}\markipa{号}{h\`ao}& \LARGE ……	& \LARGE …& \markipa{ellipsis}{i"lipsis}\\ \hline
+		12	&\markipa{着}{zhu\'o}\markipa{重}{zh\`ong}\markipa{号}{h\`ao} 	& \LARGE ·		& &\\	\hline
+		13	&\markipa{连}{li\'an}\markipa{接}{ji\=e}\markipa{号}{h\`ao} 		& \LARGE -		& \LARGE -&\markipa{hyphen}{"haif@n}\\ \hline
+		14	&\markipa{间}{ji\`an}\markipa{隔}{g\'e}\markipa{号}{h\`ao} 		& \LARGE ·		& \LARGE · & \markipa{interpunct}{in"t3:p2Nkt}\\ \hline
+		15	&\markipa{书}{sh\=u}\markipa{名}{m\'ing}\markipa{号}{h\`ao} 		& \LARGE 《 》 ＜＞& &\\ \hline
+		16	&\markipa{专}{zhu\=an}\markipa{名}{m\'ing}\markipa{号}{h\`ao} 	& \LARGE ——		&&\\ \hline
+		17 	&\markipa{撇}{pi\v{e}}\markipa{号}{h\`ao}						& \LARGE 		& \LARGE ' 	& \markipa{apostrophe}{@"pOstr@fi}\\ \hline
+		18 	&\markipa{斜}{xi\'e}\markipa{线}{xi\`an}							& \LARGE 		& \LARGE /		&\markipa{slash}{sl\ae S}\\ \hline
+		19 	&\markipa{反}{f\v{a}n}\markipa{斜}{xi\'e}\markipa{线}{xi\`an}	& \LARGE 		& \LARGE \textbackslash &\markipa{backslash}{"b\ae ksl\ae S}\\ \hline
+		20	&\markipa{波}{b\=o}\markipa{浪}{l\`ang}\markipa{号}{h\`ao}		& \LARGE 		&  \LARGE \~{} & \markipa{tilde}{"tild@}\\ \hline
+
+	\end{tabular}
+
+\end{document}
